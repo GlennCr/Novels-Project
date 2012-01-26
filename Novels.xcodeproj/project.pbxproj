@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FE3A15B14D20189006159A7 /* Alice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FE3A15714D20189006159A7 /* Alice.txt */; };
+		1FE3A15C14D20189006159A7 /* Books.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FE3A15814D20189006159A7 /* Books.plist */; };
+		1FE3A15D14D20189006159A7 /* Oz.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FE3A15914D20189006159A7 /* Oz.txt */; };
+		1FE3A15E14D20189006159A7 /* Pumpernickel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FE3A15A14D20189006159A7 /* Pumpernickel.txt */; };
 		75C934D514CF4E550045E8EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C934D414CF4E550045E8EF /* UIKit.framework */; };
 		75C934D714CF4E550045E8EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C934D614CF4E550045E8EF /* Foundation.framework */; };
 		75C934D914CF4E550045E8EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C934D814CF4E550045E8EF /* CoreGraphics.framework */; };
@@ -22,10 +26,6 @@
 		75C9350714CF4F0A0045E8EF /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C9350514CF4F0A0045E8EF /* TextViewController.xib */; };
 		75C9350D14CF59FC0045E8EF /* DocSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C9350B14CF59FC0045E8EF /* DocSelectionViewController.m */; };
 		75C9350E14CF59FC0045E8EF /* DocSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C9350C14CF59FC0045E8EF /* DocSelectionViewController.xib */; };
-		75C9351314CF5D600045E8EF /* Alice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 75C9350F14CF5D600045E8EF /* Alice.txt */; };
-		75C9351414CF5D600045E8EF /* Books.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75C9351014CF5D600045E8EF /* Books.plist */; };
-		75C9351514CF5D600045E8EF /* Oz.txt in Resources */ = {isa = PBXBuildFile; fileRef = 75C9351114CF5D600045E8EF /* Oz.txt */; };
-		75C9351614CF5D600045E8EF /* Pumpernickel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 75C9351214CF5D600045E8EF /* Pumpernickel.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FE3A15714D20189006159A7 /* Alice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Alice.txt; sourceTree = "<group>"; };
+		1FE3A15814D20189006159A7 /* Books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Books.plist; sourceTree = "<group>"; };
+		1FE3A15914D20189006159A7 /* Oz.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Oz.txt; sourceTree = "<group>"; };
+		1FE3A15A14D20189006159A7 /* Pumpernickel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pumpernickel.txt; sourceTree = "<group>"; };
 		75C934D014CF4E550045E8EF /* Novels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C934D414CF4E550045E8EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		75C934D614CF4E550045E8EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,10 +65,6 @@
 		75C9350A14CF59FC0045E8EF /* DocSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocSelectionViewController.h; sourceTree = "<group>"; };
 		75C9350B14CF59FC0045E8EF /* DocSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocSelectionViewController.m; sourceTree = "<group>"; };
 		75C9350C14CF59FC0045E8EF /* DocSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocSelectionViewController.xib; sourceTree = "<group>"; };
-		75C9350F14CF5D600045E8EF /* Alice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Alice.txt; path = Resources/Alice.txt; sourceTree = SOURCE_ROOT; };
-		75C9351014CF5D600045E8EF /* Books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Books.plist; path = Resources/Books.plist; sourceTree = SOURCE_ROOT; };
-		75C9351114CF5D600045E8EF /* Oz.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Oz.txt; path = Resources/Oz.txt; sourceTree = SOURCE_ROOT; };
-		75C9351214CF5D600045E8EF /* Pumpernickel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Pumpernickel.txt; path = Resources/Pumpernickel.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,10 +140,10 @@
 		75C934DB14CF4E550045E8EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				75C9350F14CF5D600045E8EF /* Alice.txt */,
-				75C9351014CF5D600045E8EF /* Books.plist */,
-				75C9351114CF5D600045E8EF /* Oz.txt */,
-				75C9351214CF5D600045E8EF /* Pumpernickel.txt */,
+				1FE3A15714D20189006159A7 /* Alice.txt */,
+				1FE3A15814D20189006159A7 /* Books.plist */,
+				1FE3A15914D20189006159A7 /* Oz.txt */,
+				1FE3A15A14D20189006159A7 /* Pumpernickel.txt */,
 				75C934DC14CF4E550045E8EF /* Novels-Info.plist */,
 				75C934DD14CF4E550045E8EF /* InfoPlist.strings */,
 				75C934E014CF4E550045E8EF /* main.m */,
@@ -244,10 +244,10 @@
 				75C934DF14CF4E550045E8EF /* InfoPlist.strings in Resources */,
 				75C9350714CF4F0A0045E8EF /* TextViewController.xib in Resources */,
 				75C9350E14CF59FC0045E8EF /* DocSelectionViewController.xib in Resources */,
-				75C9351314CF5D600045E8EF /* Alice.txt in Resources */,
-				75C9351414CF5D600045E8EF /* Books.plist in Resources */,
-				75C9351514CF5D600045E8EF /* Oz.txt in Resources */,
-				75C9351614CF5D600045E8EF /* Pumpernickel.txt in Resources */,
+				1FE3A15B14D20189006159A7 /* Alice.txt in Resources */,
+				1FE3A15C14D20189006159A7 /* Books.plist in Resources */,
+				1FE3A15D14D20189006159A7 /* Oz.txt in Resources */,
+				1FE3A15E14D20189006159A7 /* Pumpernickel.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +447,7 @@
 				75C934FF14CF4E560045E8EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75C9350014CF4E560045E8EF /* Build configuration list for PBXNativeTarget "NovelsTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +456,7 @@
 				75C9350214CF4E560045E8EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
