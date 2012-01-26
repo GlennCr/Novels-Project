@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextViewController.h"
+#import "DocSelectionViewController.h"
 
 @interface NovelsAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UINavigationController *navControl;
 
 @end

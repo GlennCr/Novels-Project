@@ -11,12 +11,31 @@
 @implementation NovelsAppDelegate
 
 @synthesize window = _window;
+@synthesize navControl = _navControl;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    //old
+    ///Allocate a TextView Controller and initialize it from our xib
+    ///nil specifies that we are loading from the 'main bundle'
+    ///aka the bundle for our app.
+    //TextViewController *textVC = [[TextViewController alloc] initWithNibName:@"TextViewController" bundle:nil];
+    ///note that textVC is not loaded until it's view is accessed
+    ///do any initialization in the viewDidLoad for the VC, not here.
+    //[textVC.view setFrame:[[UIScreen mainScreen] applicationFrame]];
+    //[self.window addSubview:textVC.view];
+    //old
+    
+    DocSelectionViewController *docVC = [[DocSelectionViewController alloc] initWithNibName:@"DocSelectionViewController" 
+                                                                                     bundle:nil];
+    self.navControl = [[UINavigationController alloc] initWithRootViewController:docVC];
+    [docVC.view setFrame:[[UIScreen mainScreen] applicationFrame]];
+    [self.window addSubview:docVC.view];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

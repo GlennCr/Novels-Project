@@ -18,6 +18,14 @@
 		75C934EF14CF4E560045E8EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C934D614CF4E550045E8EF /* Foundation.framework */; };
 		75C934F714CF4E560045E8EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75C934F514CF4E560045E8EF /* InfoPlist.strings */; };
 		75C934FA14CF4E560045E8EF /* NovelsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C934F914CF4E560045E8EF /* NovelsTests.m */; };
+		75C9350614CF4F0A0045E8EF /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C9350414CF4F0A0045E8EF /* TextViewController.m */; };
+		75C9350714CF4F0A0045E8EF /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C9350514CF4F0A0045E8EF /* TextViewController.xib */; };
+		75C9350D14CF59FC0045E8EF /* DocSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C9350B14CF59FC0045E8EF /* DocSelectionViewController.m */; };
+		75C9350E14CF59FC0045E8EF /* DocSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C9350C14CF59FC0045E8EF /* DocSelectionViewController.xib */; };
+		75C9351314CF5D600045E8EF /* Alice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 75C9350F14CF5D600045E8EF /* Alice.txt */; };
+		75C9351414CF5D600045E8EF /* Books.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75C9351014CF5D600045E8EF /* Books.plist */; };
+		75C9351514CF5D600045E8EF /* Oz.txt in Resources */ = {isa = PBXBuildFile; fileRef = 75C9351114CF5D600045E8EF /* Oz.txt */; };
+		75C9351614CF5D600045E8EF /* Pumpernickel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 75C9351214CF5D600045E8EF /* Pumpernickel.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +43,28 @@
 		75C934D414CF4E550045E8EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		75C934D614CF4E550045E8EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75C934D814CF4E550045E8EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		75C934DC14CF4E550045E8EF /* Novels-Info.plist */ = {isa = PBXFileReference; path = "Novels-Info.plist"; sourceTree = "<group>"; };
+		75C934DC14CF4E550045E8EF /* Novels-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Novels-Info.plist"; sourceTree = "<group>"; };
 		75C934DE14CF4E550045E8EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75C934E014CF4E550045E8EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		75C934E214CF4E550045E8EF /* Novels-Prefix.pch */ = {isa = PBXFileReference; path = "Novels-Prefix.pch"; sourceTree = "<group>"; };
-		75C934E314CF4E550045E8EF /* NovelsAppDelegate.h */ = {isa = PBXFileReference; path = NovelsAppDelegate.h; sourceTree = "<group>"; };
+		75C934E214CF4E550045E8EF /* Novels-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Novels-Prefix.pch"; sourceTree = "<group>"; };
+		75C934E314CF4E550045E8EF /* NovelsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NovelsAppDelegate.h; sourceTree = "<group>"; };
 		75C934E414CF4E550045E8EF /* NovelsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NovelsAppDelegate.m; sourceTree = "<group>"; };
 		75C934EB14CF4E560045E8EF /* NovelsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovelsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C934EC14CF4E560045E8EF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		75C934F414CF4E560045E8EF /* NovelsTests-Info.plist */ = {isa = PBXFileReference; path = "NovelsTests-Info.plist"; sourceTree = "<group>"; };
+		75C934F414CF4E560045E8EF /* NovelsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NovelsTests-Info.plist"; sourceTree = "<group>"; };
 		75C934F614CF4E560045E8EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		75C934F814CF4E560045E8EF /* NovelsTests.h */ = {isa = PBXFileReference; path = NovelsTests.h; sourceTree = "<group>"; };
+		75C934F814CF4E560045E8EF /* NovelsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NovelsTests.h; sourceTree = "<group>"; };
 		75C934F914CF4E560045E8EF /* NovelsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NovelsTests.m; sourceTree = "<group>"; };
+		75C9350314CF4F0A0045E8EF /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		75C9350414CF4F0A0045E8EF /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		75C9350514CF4F0A0045E8EF /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		75C9350A14CF59FC0045E8EF /* DocSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocSelectionViewController.h; sourceTree = "<group>"; };
+		75C9350B14CF59FC0045E8EF /* DocSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocSelectionViewController.m; sourceTree = "<group>"; };
+		75C9350C14CF59FC0045E8EF /* DocSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocSelectionViewController.xib; sourceTree = "<group>"; };
+		75C9350F14CF5D600045E8EF /* Alice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Alice.txt; path = Resources/Alice.txt; sourceTree = SOURCE_ROOT; };
+		75C9351014CF5D600045E8EF /* Books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Books.plist; path = Resources/Books.plist; sourceTree = SOURCE_ROOT; };
+		75C9351114CF5D600045E8EF /* Oz.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Oz.txt; path = Resources/Oz.txt; sourceTree = SOURCE_ROOT; };
+		75C9351214CF5D600045E8EF /* Pumpernickel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Pumpernickel.txt; path = Resources/Pumpernickel.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +127,12 @@
 				75C934E314CF4E550045E8EF /* NovelsAppDelegate.h */,
 				75C934E414CF4E550045E8EF /* NovelsAppDelegate.m */,
 				75C934DB14CF4E550045E8EF /* Supporting Files */,
+				75C9350314CF4F0A0045E8EF /* TextViewController.h */,
+				75C9350414CF4F0A0045E8EF /* TextViewController.m */,
+				75C9350514CF4F0A0045E8EF /* TextViewController.xib */,
+				75C9350A14CF59FC0045E8EF /* DocSelectionViewController.h */,
+				75C9350B14CF59FC0045E8EF /* DocSelectionViewController.m */,
+				75C9350C14CF59FC0045E8EF /* DocSelectionViewController.xib */,
 			);
 			path = Novels;
 			sourceTree = "<group>";
@@ -116,6 +140,10 @@
 		75C934DB14CF4E550045E8EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				75C9350F14CF5D600045E8EF /* Alice.txt */,
+				75C9351014CF5D600045E8EF /* Books.plist */,
+				75C9351114CF5D600045E8EF /* Oz.txt */,
+				75C9351214CF5D600045E8EF /* Pumpernickel.txt */,
 				75C934DC14CF4E550045E8EF /* Novels-Info.plist */,
 				75C934DD14CF4E550045E8EF /* InfoPlist.strings */,
 				75C934E014CF4E550045E8EF /* main.m */,
@@ -214,6 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				75C934DF14CF4E550045E8EF /* InfoPlist.strings in Resources */,
+				75C9350714CF4F0A0045E8EF /* TextViewController.xib in Resources */,
+				75C9350E14CF59FC0045E8EF /* DocSelectionViewController.xib in Resources */,
+				75C9351314CF5D600045E8EF /* Alice.txt in Resources */,
+				75C9351414CF5D600045E8EF /* Books.plist in Resources */,
+				75C9351514CF5D600045E8EF /* Oz.txt in Resources */,
+				75C9351614CF5D600045E8EF /* Pumpernickel.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +284,8 @@
 			files = (
 				75C934E114CF4E550045E8EF /* main.m in Sources */,
 				75C934E514CF4E550045E8EF /* NovelsAppDelegate.m in Sources */,
+				75C9350614CF4F0A0045E8EF /* TextViewController.m in Sources */,
+				75C9350D14CF59FC0045E8EF /* DocSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

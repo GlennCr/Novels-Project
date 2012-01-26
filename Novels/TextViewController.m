@@ -10,6 +10,21 @@
 
 @implementation TextViewController
 
+@synthesize textView = _textView;
+
+
+-(void)loadText:(NSString *)path
+{
+    //The stringWithContentsOfFile:encoding:error method loads a file into an NSString, given the encoding.
+    //Alice.txt is encoded UTF-8
+    //We pass NULL for the error argument, because we dont care if there is an error right now.
+    NSString *textString = [NSString stringWithContentsOfFile:path 
+                                                     encoding:NSUTF8StringEncoding
+                                                        error:NULL];
+    
+    self.textView.text = textString;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -33,6 +48,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //Alice.txt is within the sources for our application.
+    [self loadText:[[NSBundle mainBundle] pathForResource:@"Alice" ofType:@"txt"] ];
+    
 }
 
 - (void)viewDidUnload

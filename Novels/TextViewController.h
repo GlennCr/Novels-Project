@@ -10,4 +10,8 @@
 
 @interface TextViewController : UIViewController
 
+@property (retain, nonatomic) IBOutlet UITextView *textView;
+
+-(void)loadText:(NSString *)path;
+
 @end
