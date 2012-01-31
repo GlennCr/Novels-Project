@@ -11,7 +11,7 @@
 @implementation NovelsAppDelegate
 
 @synthesize window = _window;
-@synthesize navControl = _navControl;
+@synthesize navController = _navController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -32,7 +32,8 @@
     
     DocSelectionViewController *docVC = [[DocSelectionViewController alloc] initWithNibName:@"DocSelectionViewController" 
                                                                                      bundle:nil];
-    self.navControl = [[UINavigationController alloc] initWithRootViewController:docVC];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:docVC];
+    
     [docVC.view setFrame:[[UIScreen mainScreen] applicationFrame]];
     [self.window addSubview:docVC.view];
     

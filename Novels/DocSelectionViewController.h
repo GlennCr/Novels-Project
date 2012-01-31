@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextViewController.h"
 
-@interface DocSelectionViewController : UIViewController
+@interface DocSelectionViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+{
+    NSArray *books;
+    UIPickerView *picker;
+}
+@property (retain, nonatomic) IBOutlet UIPickerView *picker;
+
+-(IBAction)readButtonPressed;
 
 @end

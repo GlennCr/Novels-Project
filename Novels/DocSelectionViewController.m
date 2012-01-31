@@ -10,6 +10,29 @@
 
 @implementation DocSelectionViewController
 
+@synthesize picker = _picker;
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+    
+}
+
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return [books count];
+}
+
+-(IBAction)readButtonPressed
+{
+    TextViewController *textVC = [[TextViewController alloc] initWithNibName:@"TextViewController" bundle:nil];
+    
+    int index = [picker selectedRowInComponent:0];
+    
+    textVC.book = [books objectAtIndex:index];
+    
+    [self.navigationController pushViewController:textVC animated:YES];
+    
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,7 +55,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    books = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Books" ofType:@"plist"]];
 }
 
 - (void)viewDidUnload

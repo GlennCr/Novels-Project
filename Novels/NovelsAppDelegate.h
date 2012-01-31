@@ -13,6 +13,6 @@
 @interface NovelsAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navControl;
+@property (strong, nonatomic) UINavigationController *navController;
 
 @end

@@ -11,7 +11,7 @@
 @implementation TextViewController
 
 @synthesize textView = _textView;
-
+@synthesize book = _book;
 
 -(void)loadText:(NSString *)path
 {
@@ -44,13 +44,18 @@
 
 #pragma mark - View lifecycle
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self loadText:[[NSBundle mainBundle] pathForResource:book ofType:@"txt"]];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
     //Alice.txt is within the sources for our application.
-    [self loadText:[[NSBundle mainBundle] pathForResource:@"Alice" ofType:@"txt"] ];
+    //[self loadText:[[NSBundle mainBundle] pathForResource:@"Alice" ofType:@"txt"] ];
     
 }
 

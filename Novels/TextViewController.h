@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface TextViewController : UIViewController
-
+{
+    IBOutlet UITextView *textView;
+    NSString *book;
+}
 @property (retain, nonatomic) IBOutlet UITextView *textView;
+@property (retain, nonatomic) NSString *book;
 
 -(void)loadText:(NSString *)path;
 
