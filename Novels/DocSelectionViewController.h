@@ -10,12 +10,10 @@
 #import "TextViewController.h"
 
 @interface DocSelectionViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
-{
-    NSArray *books;
-    UIPickerView *picker;
-}
-@property (retain, nonatomic) IBOutlet UIPickerView *picker;
 
+@property (retain, nonatomic) IBOutlet UIPickerView *picker;
+@property (retain, nonatomic) NSArray *books;
+@property (strong, atomic) TextViewController *viewController;
 -(IBAction)readButtonPressed;
 
 @end

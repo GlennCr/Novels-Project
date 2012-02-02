@@ -30,12 +30,13 @@
     //[self.window addSubview:textVC.view];
     //old
     
-    DocSelectionViewController *docVC = [[DocSelectionViewController alloc] initWithNibName:@"DocSelectionViewController" 
-                                                                                     bundle:nil];
+    DocSelectionViewController *docVC = [[DocSelectionViewController alloc] 
+                                         initWithNibName:@"DocSelectionViewController"
+                                         bundle:nil];
     self.navController = [[UINavigationController alloc] initWithRootViewController:docVC];
     
     [docVC.view setFrame:[[UIScreen mainScreen] applicationFrame]];
-    [self.window addSubview:docVC.view];
+    [self.window addSubview:self.navController.view];
     
     [self.window makeKeyAndVisible];
     return YES;

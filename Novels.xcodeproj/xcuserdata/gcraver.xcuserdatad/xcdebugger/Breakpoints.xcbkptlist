@@ -9,12 +9,40 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Novels/DocSelectionViewController.m"
-         timestampString = "349743080.998156"
+         timestampString = "349911771.552277"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "28"
-         endingLineNumber = "28"
+         startingLineNumber = "37"
+         endingLineNumber = "37"
          landmarkName = "-readButtonPressed"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Novels/TextViewController.m"
+         timestampString = "349911800.890433"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "49"
+         endingLineNumber = "49"
+         landmarkName = "-viewWillAppear:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Novels/DocSelectionViewController.m"
+         timestampString = "349912000.409562"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "26"
+         endingLineNumber = "26"
+         landmarkName = "-pickerView:titleForRow:forComponent:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

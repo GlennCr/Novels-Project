@@ -11,25 +11,30 @@
 @implementation DocSelectionViewController
 
 @synthesize picker = _picker;
+@synthesize books = _books;
+@synthesize viewController = _viewController;
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
-    
 }
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return [books count];
+    return [self.books count];
+}
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    return [self.books objectAtIndex:row];
 }
 
 -(IBAction)readButtonPressed
 {
-    TextViewController *textVC = [[TextViewController alloc] initWithNibName:@"TextViewController" bundle:nil];
+    self.viewController = [[TextViewController alloc] initWithNibName:@"TextViewController" bundle:nil];
     
-    int index = [picker selectedRowInComponent:0];
+    int index = [self.picker selectedRowInComponent:0];
     
-    textVC.book = [books objectAtIndex:index];
+    self.viewController.book = [self.books objectAtIndex:index];
     
-    [self.navigationController pushViewController:textVC animated:YES];
+    [self.navigationController pushViewController:self.viewController animated:YES];
     
 }
 
@@ -56,7 +61,7 @@
 {
     [super viewDidLoad];
 
-    books = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Books" ofType:@"plist"]];
+    self.books = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Books" ofType:@"plist"]];
 }
 
 - (void)viewDidUnload

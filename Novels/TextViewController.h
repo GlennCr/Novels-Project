@@ -10,7 +10,7 @@
 
 @interface TextViewController : UIViewController
 {
-    IBOutlet UITextView *textView;
+    UITextView *textView;
     NSString *book;
 }
 @property (retain, nonatomic) IBOutlet UITextView *textView;
