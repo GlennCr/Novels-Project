@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TextViewController : UIViewController
-{
-    UITextView *textView;
-    NSString *book;
-}
+
 @property (retain, nonatomic) IBOutlet UITextView *textView;
 @property (retain, nonatomic) NSString *book;
 

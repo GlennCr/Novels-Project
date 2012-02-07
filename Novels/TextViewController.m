@@ -46,7 +46,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self loadText:[[NSBundle mainBundle] pathForResource:book ofType:@"txt"]];
+    [self loadText:[[NSBundle mainBundle] pathForResource:self.book ofType:@"txt"]];
 }
 
 - (void)viewDidLoad
